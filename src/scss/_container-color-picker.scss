@@ -10,7 +10,7 @@
     border-radius: 1.5rem;
 
     h1 {
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
       color: $font-color-white;
       text-align: center;
     }
@@ -30,7 +30,7 @@
       div {
         height: 2rem;
         width: 2rem;
-        border: 1px solid white;
+        border: 1px solid $font-color-white;
         border-radius: 1rem;
         display: inline-block;
         overflow: hidden;

@@ -1,0 +1,42 @@
+button {
+  width: 2rem;
+  height: 2rem;
+  background-color: $font-color-white;
+  border-radius: 0.4rem;
+  border: none;
+  cursor: pointer;
+  position: relative;
+
+  span {
+    position: absolute;
+    top: -120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $bg-color-copy-tooltip;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.4rem;
+    transition: 0.2s linear;
+    transition-delay: 0.2s;
+    color: $font-color-white;
+    font-size: 0.8rem;
+    opacity: 0;
+    visibility: hidden;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 120%;
+      left: 42%;
+      margin-top: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: $bg-color-copy-tooltip transparent transparent;
+    }
+  }
+
+  &:hover span {
+    opacity: 1;
+    visibility: visible;
+    top: -100%;
+  }
+}

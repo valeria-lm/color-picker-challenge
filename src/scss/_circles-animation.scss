@@ -2,7 +2,7 @@
   .circle {
     width: 8rem;
     height: 8rem;
-    background: #ffffff;
+    background-color: $font-color-white;
     border-radius: 50%;
     position: absolute;
     animation: move-up 2s ease-in infinite alternate-reverse;
@@ -17,7 +17,7 @@
   .circle:nth-child(2) {
     bottom: 0;
     right: 0;
-    animation-name: move-down;
+    animation: move-down;
   }
 
   .circle:nth-child(3) {
@@ -32,7 +32,7 @@
     height: 4rem;
     top: 10rem;
     left: 0;
-    animation-name: move-down;
+    animation: move-down;
   }
 
   .circle:nth-child(5) {
@@ -40,7 +40,7 @@
     height: 2rem;
     bottom: 10rem;
     right: 6rem;
-    animation-name: move-down;
+    animation: move-down;
   }
 
   .circle:nth-child(6) {
