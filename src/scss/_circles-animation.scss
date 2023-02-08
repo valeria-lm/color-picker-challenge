@@ -1,7 +1,5 @@
 .container {
   .circle {
-    width: 8rem;
-    height: 8rem;
     background-color: $font-color-white;
     border-radius: 50%;
     position: absolute;
@@ -10,14 +8,18 @@
   }
 
   .circle:nth-child(1) {
+    width: 8rem;
+    height: 8rem;
     top: 0;
     left: 0;
   }
 
   .circle:nth-child(2) {
+    width: 8rem;
+    height: 8rem;
     bottom: 0;
     right: 0;
-    animation: move-down;
+    animation-name: move-down;
   }
 
   .circle:nth-child(3) {
@@ -32,7 +34,7 @@
     height: 4rem;
     top: 10rem;
     left: 0;
-    animation: move-down;
+    animation-name: move-down;
   }
 
   .circle:nth-child(5) {
@@ -40,7 +42,7 @@
     height: 2rem;
     bottom: 10rem;
     right: 6rem;
-    animation: move-down;
+    animation-name: move-down;
   }
 
   .circle:nth-child(6) {
